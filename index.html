@@ -3,9 +3,7 @@
 <head>
 <title>Lievichev 2P</title>
 <script language="JavaScript">
-// ======= Функции открытия заданий =======
-
-// Zadania 1–10
+  
 function WinOpen_z1() {window.open("zadanie1_liev.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
 function WinOpen_z2() {window.open("zadanie2_liev.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
 function WinOpen_z3() {window.open("zadanie3_liev.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");}
@@ -17,7 +15,6 @@ function WinOpen_z8() {window.open("zadanie8_liev.html","okienko_z8","toolbar=no
 function WinOpen_z9() {window.open("zadanie9_liev.html","okienko_z9","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
 function WinOpen_z10() {window.open("zadanie10_liev.html","okienko_z10","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
 
-// Zadania 11–26 (с кодами)
 for (let i = 11; i <= 26; i++) {
   eval(`
     function WinOpen_z${i}() {
@@ -37,7 +34,6 @@ function okno_zamknij() { window.close(); }
 <p style="font-size: 2cm; color: red; font-weight: bolder;">Szkielet zaliczeniowy JavaScript — Kyrylo Lievichev 2P</p>
 
 <form>
-  <!-- Zadania 1–10 -->
   <input type="button" value="Zadanie 1 — Lievichev" onclick="WinOpen_z1()"> <hr style="width:50%;" align="left" color="red">
   <input type="button" value="Zadanie 2 — Lievichev" onclick="WinOpen_z2()"> <hr style="width:50%;" align="left" color="red">
   <input type="button" value="Zadanie 3 — Lievichev" onclick="WinOpen_z3()"> <hr style="width:50%;" align="left" color="red">
@@ -49,7 +45,6 @@ function okno_zamknij() { window.close(); }
   <input type="button" value="Zadanie 9 — Lievichev" onclick="WinOpen_z9()"> <hr style="width:50%;" align="left" color="red">
   <input type="button" value="Zadanie 10 — Lievichev" onclick="WinOpen_z10()"> <hr style="width:50%;" align="left" color="red">
 
-  <!-- Zadania 11–26 -->
   <script>
     for (let i = 11; i <= 26; i++) {
       document.write(
