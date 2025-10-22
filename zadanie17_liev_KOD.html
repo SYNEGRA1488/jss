@@ -1,10 +1,49 @@
 <!-- Autor: Kyrylo Lievichev, Nr 14 -->
-<!doctype html>
-<html lang='pl'>
-<head><meta charset='utf-8'><title>KOD</title></head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z17</title>
+</head>
 <body>
-<h2>Kod (HTML + JS)</h2>
-<textarea cols='100' rows='30' readonly>
+    <h2> Wymień cztery sposoby wyprowadzania danych w JS</h2>
+
+    <ul>
+        <li>document.write()</li>
+        <li>z użyciem okienka</li>
+        <li>okienka formularza</li>
+        <li>tabele</li>
+    </ul>
+
+    <h2>Czym jest funkcja w JS?</h2>
+
+        Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,<br>
+    Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,<br>
+    Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.<br>
+    suma_kry(a, b), Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return
+
+    <h2>Metody getElementsByName, getElementById, getElementByTagName</h2>
+
+    <ul>
+        <li>getElementById("id") - dostęp do wszystkich elementów o konkretnej wartości atrybutu id </li>
+        <li>getElementsByTagName("znacznik") - dostęp do wszystkich elementów o typie znacznika, np. P lub DIV .</li>
+        <li>getElementsByName("nazwa") -dostęp do wszystkich elementów o konkretnej wartości atrybutu.</li>
+    </ul>
+
+    <h2>właściwości innerHTML, innerText, className</h2>
+
+    <ul>
+        <li>innerHTML - jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli.</li>
+        <li>innerText - umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie.</li>
+        <li>className - umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Autor: Kyrylo Lievichev, Nr 14 -->
+    <h2>Kod (HTML + JS)</h2>
+    <textarea cols='100' rows='30' readonly>
 <!-- HTML file: zadanie17_liev.html -->
 <!-- Autor: Kyrylo Lievichev, Nr 14 -->
 <!doctype html>
@@ -22,8 +61,10 @@
 <!-- JS file: zadanie17_liev.js -->
 // Autor: Kyrylo Lievichev, Nr 14
 
-(function(){ document.getElementById('output_17').innerHTML = '<b>1.</b> document.write(), alert(), formularze, tabela<br><b>2.</b> Funkcja - zbior instrukcji; wywolywana po nazwie; moze miec argumenty; moze zwracac wartosc<br><b>3.</b> getElementById/getElementsByName/getElementsByTagName - dostep do DOM<br><b>4.</b> innerHTML/innerText/className - manipulacja elementem'; })();
+(function(){
+    document.getElementById('output_17').innerHTML = '';
+})();
+    </textarea>
 
-</textarea>
 </body>
 </html>
