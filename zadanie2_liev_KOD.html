@@ -1,0 +1,34 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie2_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie2_liev</title>
+</head>
+<body>
+<div id='output_2'></div>
+<script src="zadanie2_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie2_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+
+(function(){
+  var out=document.getElementById('output_2');
+  out.innerHTML += "ostatnia modyfikacja strony".fontcolor("red").bold().fontsize(7)+"<br>";
+  out.innerHTML += document.lastModified;
+})();
+
+</textarea>
+</body>
+</html>

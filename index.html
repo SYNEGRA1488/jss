@@ -1,0 +1,66 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<html>
+<head>
+<title>Lievichev 2P</title>
+<script language="JavaScript">
+// ======= Функции открытия заданий =======
+
+// Zadania 1–10
+function WinOpen_z1() {window.open("zadanie1_liev.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
+function WinOpen_z2() {window.open("zadanie2_liev.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
+function WinOpen_z3() {window.open("zadanie3_liev.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");}
+function WinOpen_z4() {window.open("zadanie4_liev.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=100,left=200");}
+function WinOpen_z5() {window.open("zadanie5_liev.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=400,width=700,top=200,left=200");}
+function WinOpen_z6() {window.open("zadanie6_liev.html","okienko_z6","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
+function WinOpen_z7() {window.open("zadanie7_liev.html","okienko_z7","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
+function WinOpen_z8() {window.open("zadanie8_liev.html","okienko_z8","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
+function WinOpen_z9() {window.open("zadanie9_liev.html","okienko_z9","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
+function WinOpen_z10() {window.open("zadanie10_liev.html","okienko_z10","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=200");}
+
+// Zadania 11–26 (с кодами)
+for (let i = 11; i <= 26; i++) {
+  eval(`
+    function WinOpen_z${i}() {
+      window.open("zadanie${i}_liev.html","okienko_z${i}","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");
+    }
+    function WinOpen_z${i}_KOD() {
+      window.open("zadanie${i}_liev_KOD.html","okienko_z${i}_KOD","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");
+    }
+  `);
+}
+
+function okno_zamknij() { window.close(); }
+</script>
+</head>
+
+<body>
+<p style="font-size: 2cm; color: red; font-weight: bolder;">Szkielet zaliczeniowy JavaScript — Kyrylo Lievichev 2P</p>
+
+<form>
+  <!-- Zadania 1–10 -->
+  <input type="button" value="Zadanie 1 — Lievichev" onclick="WinOpen_z1()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 2 — Lievichev" onclick="WinOpen_z2()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 3 — Lievichev" onclick="WinOpen_z3()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 4 — Lievichev" onclick="WinOpen_z4()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 5 — Lievichev" onclick="WinOpen_z5()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 6 — Lievichev" onclick="WinOpen_z6()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 7 — Lievichev" onclick="WinOpen_z7()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 8 — Lievichev" onclick="WinOpen_z8()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 9 — Lievichev" onclick="WinOpen_z9()"> <hr style="width:50%;" align="left" color="red">
+  <input type="button" value="Zadanie 10 — Lievichev" onclick="WinOpen_z10()"> <hr style="width:50%;" align="left" color="red">
+
+  <!-- Zadania 11–26 -->
+  <script>
+    for (let i = 11; i <= 26; i++) {
+      document.write(
+        `<input type='button' value='Zadanie ${i} — Lievichev' onclick='WinOpen_z${i}()'> 
+         <input type='button' value='Zadanie ${i} — KOD' onclick='WinOpen_z${i}_KOD()'> 
+         <br><hr style="width:50%;" align="left" color="red">`
+      );
+    }
+  </script>
+
+  <input type="button" value="Zamknij okno" onclick="okno_zamknij()">
+</form>
+</body>
+</html>

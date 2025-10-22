@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie9_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie9_liev</title>
+</head>
+<body>
+<div id='output_9'></div>
+<script src="zadanie9_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie9_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ document.getElementById('output_9').innerHTML='<button onclick="show_prompt()">Pokaż prompt box</button>'; window.show_prompt=function(){var name=prompt('Napisz imię','Kyrylo'); if(name!=null && name!='') document.getElementById('output_9').innerHTML='Witaj '+name+'! jak się masz?';}; })();
+
+</textarea>
+</body>
+</html>

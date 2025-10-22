@@ -1,0 +1,3 @@
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ document.getElementById('output_19').innerHTML = 'Podaj dlugosc: <input id="dlugosc_liev" value="4"> cm <button onclick="pole_liev()">Pole</button> <button onclick="obwod_liev()">Obwod</button><div id="nazwa_liev"></div>'; window.pole_liev=function(){var a=parseFloat(document.getElementById('dlugosc_liev').value); document.getElementById('nazwa_liev').innerHTML='Pole kwadratu= '+(a*a).toFixed(2)+' cm^2';}; window.obwod_liev=function(){var a=parseFloat(document.getElementById('dlugosc_liev').value); document.getElementById('nazwa_liev').innerHTML='Obwod kwadratu= '+(4*a).toFixed(2)+' cm';}; })();

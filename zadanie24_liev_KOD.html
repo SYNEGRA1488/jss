@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie24_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie24_liev</title>
+</head>
+<body>
+<div id='output_24'></div>
+<script src="zadanie24_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie24_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ var x1=parseFloat(prompt('x1 (deg) =','30')), x2=parseFloat(prompt('x2 =','2')); var out=document.getElementById('output_24'); out.innerHTML='wczytane liczby: x1='+x1+'    x2='+x2+'<br>'; var y1=Math.pow(x1,x2); out.innerHTML+='y1 = '+y1.toFixed(2)+'<br>'; var rad=(x1*Math.PI)/180; out.innerHTML+='x1 [stopniach] = '+x1+' , x1 [radianach] = '+rad.toFixed(2)+'<br>'; var y2=Math.sin(rad)+Math.cos(rad); out.innerHTML+='y2 = '+y2.toFixed(2)+'<br>'; var y3=Math.sqrt(Math.abs(x1))+Math.pow(x2,3); out.innerHTML+='y3 = '+y3.toFixed(2); })();
+
+</textarea>
+</body>
+</html>

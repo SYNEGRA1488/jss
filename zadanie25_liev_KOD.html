@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie25_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie25_liev</title>
+</head>
+<body>
+<div id='output_25'></div>
+<script src="zadanie25_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie25_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ var No=parseFloat(prompt('No =','1000')), t=parseFloat(prompt('t (lata) =','1000')), T12=parseFloat(prompt('T1/2 (lata) =','5700')); var lambda=Math.LN2/T12; var N=No*Math.exp(-lambda*t); document.getElementById('output_25').innerHTML='No='+No+'<br>t='+t+' lata<br>T1/2='+T12+' lata<br>lambda='+lambda.toFixed(7)+' [1/rok]<br>N(t) = '+N.toFixed(2); })();
+
+</textarea>
+</body>
+</html>

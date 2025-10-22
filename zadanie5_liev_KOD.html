@@ -1,0 +1,35 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie5_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie5_liev</title>
+</head>
+<body>
+<div id='output_5'></div>
+<script src="zadanie5_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie5_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+
+(function(){
+  var out=document.getElementById('output_5');
+  out.innerHTML = 'obliczamy układ<br>';
+  for(var k=1;k<=4;k++){ out.innerHTML += '<button onclick="WinOpen_g('+k+')">grafika'+k+'</button> '; }
+  window.WinOpen_g = function(k){ window.open('grafika'+k+'_liev.html','graf'+k,'toolbar=no,height=300,width=300,left='+ (100 + (k%2)*320) +',top='+(100 + Math.floor((k-1)/2)*320)); };
+})();
+
+</textarea>
+</body>
+</html>

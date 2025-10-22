@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie26_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie26_liev</title>
+</head>
+<body>
+<div id='output_26'></div>
+<script src="zadanie26_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie26_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ document.getElementById('output_26').innerHTML = '<form onsubmit="Pow_lie(); Obw_lie(); return false;">Górna podstawa a: <input id="a" value="6"><br>Dolna podstawa b: <input id="b" value="10"><br>Wysokość h: <input id="h" value="4"><br><input type="submit" value="Oblicz"></form><div id="wynik"></div>'; window.Pow_lie=function(){var a=parseFloat(document.getElementById('a').value), b=parseFloat(document.getElementById('b').value), h=parseFloat(document.getElementById('h').value); var area=(a+b)*h/2; document.getElementById('wynik').innerHTML='Pole = '+area.toFixed(2)+'<br>';}; window.Obw_lie=function(){var a=Math.abs(parseFloat(document.getElementById('a').value)), b=Math.abs(parseFloat(document.getElementById('b').value)), h=parseFloat(document.getElementById('h').value); var halfdiff=Math.abs(b-a)/2; var ramie=Math.sqrt(Math.pow(halfdiff,2)+Math.pow(h,2)); var obw=a+b+2*ramie; document.getElementById('wynik').innerHTML += 'Obwod = '+obw.toFixed(2)+'<br>Ramie = '+ramie.toFixed(2);}; })();
+
+</textarea>
+</body>
+</html>

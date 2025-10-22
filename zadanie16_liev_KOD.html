@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie16_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie16_liev</title>
+</head>
+<body>
+<div id='output_16'></div>
+<script src="zadanie16_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie16_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ var A=parseFloat(prompt('A=','1')); var B=parseFloat(prompt('B=','2')); var p1=Math.pow(A+B,3); var p2=Math.pow(A,3)+3*Math.pow(A,2)*B+3*A*Math.pow(B,2)+Math.pow(B,3); document.getElementById('output_16').innerHTML = '('+A+' + '+B+')^3 = '+p1+'<br>'+p2; })();
+
+</textarea>
+</body>
+</html>

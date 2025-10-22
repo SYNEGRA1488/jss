@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie19_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie19_liev</title>
+</head>
+<body>
+<div id='output_19'></div>
+<script src="zadanie19_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie19_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ document.getElementById('output_19').innerHTML = 'Podaj dlugosc: <input id="dlugosc_liev" value="4"> cm <button onclick="pole_liev()">Pole</button> <button onclick="obwod_liev()">Obwod</button><div id="nazwa_liev"></div>'; window.pole_liev=function(){var a=parseFloat(document.getElementById('dlugosc_liev').value); document.getElementById('nazwa_liev').innerHTML='Pole kwadratu= '+(a*a).toFixed(2)+' cm^2';}; window.obwod_liev=function(){var a=parseFloat(document.getElementById('dlugosc_liev').value); document.getElementById('nazwa_liev').innerHTML='Obwod kwadratu= '+(4*a).toFixed(2)+' cm';}; })();
+
+</textarea>
+</body>
+</html>

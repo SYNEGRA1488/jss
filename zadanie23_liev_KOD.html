@@ -1,0 +1,29 @@
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head><meta charset='utf-8'><title>KOD</title></head>
+<body>
+<h2>Kod (HTML + JS)</h2>
+<textarea cols='100' rows='30' readonly>
+<!-- HTML file: zadanie23_liev.html -->
+<!-- Autor: Kyrylo Lievichev, Nr 14 -->
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>zadanie23_liev</title>
+</head>
+<body>
+<div id='output_23'></div>
+<script src="zadanie23_liev.js"></script>
+</body>
+</html>
+
+<!-- JS file: zadanie23_liev.js -->
+// Autor: Kyrylo Lievichev, Nr 14
+
+(function(){ var D=parseFloat(prompt('D - wysokość oparcia drabiny (m)','5')), X=parseFloat(prompt('X - odległość od muru (m)','3')); var length=Math.sqrt(D*D+X*X); var angleRad=Math.atan(D/X); var angleDeg=angleRad*180/Math.PI; document.getElementById('output_23').innerHTML='Długość drabiny = '+length.toFixed(2)+' m<br>Kąt nachylenia = '+angleDeg.toFixed(2)+' stopni'; })();
+
+</textarea>
+</body>
+</html>

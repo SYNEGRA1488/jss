@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5 lievichev</title>
+
+    <style>
+        p{
+        color: red;
+        font-size: 22px;
+        font-weight: bolder;
+        }
+
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function okno_zamknij_lievichev(){
+            window.close();
+        }
+
+    function WinOpen_lievichev_1(){
+        // Левый верхний угол
+        window.open("grafika1_lievichev.html", "grafika1",
+        "toolbar=no,directories=no,menubar=no,height=300,width=200,top=0,left=0");
+    }
+
+    function WinOpen_lievichev_2(){
+        // Правый верхний угол
+        let w = 200;
+        let h = 300;
+        let left = screen.availWidth - w;
+        let top = 0;
+        window.open("grafika2_lievichev.html", "grafika2",
+        "toolbar=no,directories=no,menubar=no,height="+h+",width="+w+",top="+top+",left="+left);
+    }
+
+    function WinOpen_lievichev_3(){
+        // Левый нижний угол
+        let w = 200;
+        let h = 300;
+        let left = 0;
+        let top = screen.availHeight - h;
+        window.open("grafika3_lievichev.html", "grafika3",
+        "toolbar=no,directories=no,menubar=no,height="+h+",width="+w+",top="+top+",left="+left);
+    }
+
+    function WinOpen_lievichev_4(){
+        // Правый нижний угол
+        let w = 200;
+        let h = 300;
+        let left = screen.availWidth - w;
+        let top = screen.availHeight - h;
+        window.open("grafika4_lievichev.html", "grafika4",
+        "toolbar=no,directories=no,menubar=no,height="+h+",width="+w+",top="+top+",left="+left);
+    }
+
+
+        
+    </script>
+
+    <p>Wykonał Kyrylo lievichev mój numer w dzienniku 14, czyli mam układ [(14) mod 4 = 2] układ 2</p>
+    <br>
+    <form >
+        <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_lievichev_1()">
+        <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_lievichev_2()">
+        <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_lievichev_3()">
+        <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_lievichev_4()"> <br> <br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_lievichev()"/> 
+    </form>
+</body>
+</html>
