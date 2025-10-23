@@ -1,6 +1,0 @@
-Images required (place into same folder):
-graf1.gif
-graf2.gif
-graf3.gif
-graf4.gif
-obraz1.gif
