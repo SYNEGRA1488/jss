@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+function Owoc(nazwa_k, kolor_k, waga_k, pochodzenie_k)
+{
+  this.nazwa = nazwa_k;
+  this.kolor = kolor_k;
+  this.waga = waga_k;
+  this.pochodzenie = pochodzenie_k;
+}
+Owoc.prototype.wypisz = function() {
+  alert(this.nazwa + " " + this.kolor + " " + this.waga + " " + this.pochodzenie);
+};
+var owoc1 = new Owoc("Ogórek", "zielony", "150g", "Izyum");
+var owoc2 = new Owoc("Jabłko", "czerwone", "120g", "Polska");
+var owoc3 = new Owoc("Banan", "żółty", "180g", "Ekwador");
+owoc1.wypisz();
+owoc2.wypisz();
+owoc3.wypisz();
+document.write("Dostęp do właściwości:<br>");
+document.write("Owoc 1: " + owoc1.nazwa + " " + owoc1.kolor + " " + owoc1.waga + " " + owoc1.pochodzenie + "<br>");
+document.write("Owoc 2: " + owoc2.nazwa + " " + owoc2.kolor + " " + owoc2.waga + " " + owoc2.pochodzenie + "<br>");
+document.write("Owoc 3: " + owoc3.nazwa + " " + owoc3.kolor + " " + owoc3.waga + " " + owoc3.pochodzenie + "<br>");
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe
+</body>
+</html>
