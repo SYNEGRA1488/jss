@@ -3,7 +3,7 @@
 <head>
 <title>Lievichev 2P</title>
 <script language="JavaScript">
-  
+
 function WinOpen_z1() {window.open("zadanie1_liev.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
 function WinOpen_z2() {window.open("zadanie2_liev.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=200");}
 function WinOpen_z3() {window.open("zadanie3_liev.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");}
@@ -26,7 +26,17 @@ for (let i = 11; i <= 26; i++) {
   `);
 }
 
+// Dodatkowe funkcje
+function WinOpen_z28() {window.open("z28.html","okienko_z28","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z30() {window.open("z30.html","okienko_z30","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z31() {window.open("z31.html","okienko_z31","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z30_KOD() {window.open("z30_KOD.html","okienko_z30_KOD","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z31_KOD() {window.open("z31_KOD.html","okienko_z31_KOD","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z32() {window.open("z32_lievichev.html","okienko_z32","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+function WinOpen_z32_KOD() {window.open("z32_KOD_lievichev.html","okienko_z32_KOD","toolbar=no,directories=no,menubar=no,height=400,width=600,top=200,left=200");}
+
 function okno_zamknij() { window.close(); }
+
 </script>
 </head>
 
@@ -53,6 +63,16 @@ function okno_zamknij() { window.close(); }
          <br><hr style="width:50%;" align="left" color="red">`
       );
     }
+
+    document.write(`
+      <input type='button' value='Zadanie 28 — Lievichev' onclick='WinOpen_z28()'><br><hr style="width:50%;" align="left" color="red">
+      <input type='button' value='Zadanie 30 — Lievichev' onclick='WinOpen_z30()'> 
+      <input type='button' value='Zadanie 30 — KOD' onclick='WinOpen_z30_KOD()'><br><hr style="width:50%;" align="left" color="red">
+      <input type='button' value='Zadanie 31 — Lievichev' onclick='WinOpen_z31()'> 
+      <input type='button' value='Zadanie 31 — KOD' onclick='WinOpen_z31_KOD()'><br><hr style="width:50%;" align="left" color="red">
+      <input type='button' value='Zadanie 32 — Lievichev' onclick='WinOpen_z32()'> 
+      <input type='button' value='Zadanie 32 — KOD' onclick='WinOpen_z32_KOD()'><br><hr style="width:50%;" align="left" color="red">
+    `);
   </script>
 
   <input type="button" value="Zamknij okno" onclick="okno_zamknij()">
