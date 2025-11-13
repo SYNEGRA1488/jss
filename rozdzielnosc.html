@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Rozmiar okna przeglądarki</title>
+</head>
+<body>
+  <h2>Rozmiar aktualnego okna</h2>
+  <p>Ten przykład pokazuje szerokość i wysokość widocznej części okna przeglądarki (bez pasków narzędzi i przewijania):</p>
+  <p id="demo"></p>
+
+  <script>
+    function pokazRozmiar() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      document.getElementById("demo").innerHTML =
+        "Szerokość przeglądarki: " + w + " px, wysokość: " + h + " px.";
+    }
+
+    pokazRozmiar();
+
+    window.addEventListener('resize', pokazRozmiar);
+  </script>
+</body>
+</html>
